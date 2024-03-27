@@ -1,4 +1,4 @@
 The lowest common ancestor (LCA) will be the lowest ancestor of two nodes p and q. We will use two if statements to traverse
 down each subtree recursively. Whatever p and q value we choose, if p and q are less than the root value, the LCA will be on the left
 subtree. If p and q are greater than the root value, the LCA will be on the right subtree. Once the p and q nodes aren't on the same side,
-then the parent node above them is the LCA and we return the root.
+then the parent node or ancestor above them is the LCA and we return the root.
