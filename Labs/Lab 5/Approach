@@ -1,0 +1,7 @@
+We will use a helper method called validateBST with Integer objects lower and upper for the lower bound and upper bounds of the root value.
+Like the problem states, if the root value is smaller than the values on the left subtree, it will return false. If the root value is
+greater than the values on the right subtree, it will also return false. This means that the tree isn't a valid binary search tree.
+So the range of the current root value has to be lower < root.val < upper. Once the constraints are met, the helper method will use the
+recursive calls to traverse down the subtrees to check the constraints for every node
+and also update the lower and upper bounds until it reaches the base case of null, which are the
+leaf nodes. Once both sides of the subtree return true, then the tree will be considered a valid binary search tree.
