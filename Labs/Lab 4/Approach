@@ -1,0 +1,2 @@
+We will use two recursive calls to traverse down each left and right subtree and invert or swap its children. Once we hit the base case
+of null, which is the leaf nodes, the recursive calls will stop, and will return the root with the new inverted binary tree.
