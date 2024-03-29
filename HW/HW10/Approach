@@ -1,0 +1,8 @@
+To solve this problem, we will use breadth first search (BFS) algorithm which uses a queue in order to return the level order traversal of a binary tree nodes' values.
+The traversal will go from left to right, level by level as the problem states. First we initialize a list with elements that are lists of integers called result, this is
+where our final answer or the level order traversal of a binary tree nodes' values will be. We will add an if statement for the case where the root is null, then it will return
+an empty list. Next we initialize a queue data structure where we will first add the root. A while loop is implemented to help loop through the entire binary tree, to visit
+every node and will stop when the queue is empty. We initialize another list called currentLevel to hold to current level nodes that we visited after popping from the queue. A variable called
+currentLevelSize utilized in a for loop will keep track of the size of the queue for each level we go through. After interating through the queue and popping from it, we will add
+the node values to the currentLevel list and check to see if it has any left or right children to add to the queue. After that process, we will add the currentLevel nodes to
+the final result list. This process will repeat until every node is visited and until the queue is empty.
