@@ -1,0 +1,8 @@
+To solve this problem, we will use recursion with a helper method called filler that will recursively apply the floodfill technique.
+First, in the function definition given for java, an if statement is created to see if there's any work to be done, if the starting
+pixel is the new color then there is no work to be done and it will return the image. Otherwise, we will call the helper method and
+return the new image when it's done. In the helper method called filler, a base case if statement is created to check the constraints given
+in the problem. It will check if the current pixel m and n are out of bounds or if the starting pixel is not the old color, then it will
+just return. If that's not the case, it will change the old color to the new color and will recursively call the helper method 4 times
+to change the pixels 4-directionally as stated in the problem.
+([m-1, n] moves up one, [m+1, n] moves down one, [m, n-1] moves left one, and [m, n+1] moves right one)
