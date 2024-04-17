@@ -3,5 +3,7 @@ each course and their prerequisites. For each course, we will initially set it t
 to the prereqMap. We will recursively run DFS on each course and we will know if the course can be completed if the course contains an empty list for its prerequisites. Everytime
 the DFS backtracks, it will check the prerequisites for the current course. If the current course prerequisites has an empty list, it will clear it from the prereqMap and it will
 keep doing this until all the prerequisites contain an empty list. For the test case 2 problem ([1, 0], [0, 1]), which contains a cycle, we will initialize a set called visit to
-work alongside the prereqMap. It will contain all the courses that we are visiting along the DFS path, if it has a duplicate value that was already in the set, then we will know
-that there's a cycle and will return false.
+work alongside the prereqMap. The visit set will contain all the courses that we are visiting along the DFS path, if the prerequisite value from the hashmap contains a value that we
+already visited in the set, then we will know that there is a cycle and will return false.
+
+
