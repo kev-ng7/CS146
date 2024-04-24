@@ -1,0 +1,4 @@
+We can use union find from disjoint sets to help solve this problem. This a minimum spanning tree problem so we don't want any cycles.
+We can use union to find if there's any cycles, if union(x, y) have the same parent, then we know there's a cycle and return false.
+Otherwise, we will return true and update the parent and rank for each node. After this, I'm not sure how to implement the rest of the
+code to solve this problem.
