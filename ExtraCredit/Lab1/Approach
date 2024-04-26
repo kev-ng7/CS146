@@ -1,0 +1,4 @@
+For this problem, we will use brute force approach to solve it. We will use a for loop to go through the entire array and a nested
+for loop to go through the entire array as well but it starts at i + 1 to not compare same values. The two for loops will find two numbers
+that add up to target, and if they do, it will return a new integer array of the indices of the two numbers. If it doesn't find anything, it
+will return an empty list.
