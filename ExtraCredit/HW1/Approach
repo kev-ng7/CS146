@@ -1,0 +1,6 @@
+To solve this problem, we will use a two pointer approach, one at the beginning of the string and one at the end.
+Initialize left pointer called left and right pointer called right, they will be put in a while loop that will end if they cross.
+Two more while loops will be used in order to ignore all non-alphanumeric characters and increment/decrement the pointers until we get
+to an alphanumeric character and compare. An if statement will be used to compare alphanumeric characters at both ends of the string
+once we get to it and if it doesn't equal, then we will return false. Otherwise, it will return true and increment the left pointer
+and decrement right pointer to compare the next two characters. This process will finish once left crosses right.
