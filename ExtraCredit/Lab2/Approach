@@ -1,0 +1,7 @@
+To solve this problem to find an anagram, an array called count will be used to count the frequency of each character.
+For s and t to be an anagram, they both need to have the same length of characters. An if statement will be used and if their lengths
+don't equal then it will return false. A count array will be initialized with 26 elements representing 26 characters of the alphabet.
+A for loop is used to loop through the characters of string s and t and will update their frequency count. Using the ASCII table, 'a' has
+a value of 97, so we will subtract that from the character we're currently at in the string to get the correct indexes in the count array.
+In the count array, s will increment the frequency of each character and t will decrement the frequency of each character. Once the count
+array has all zeros, then we know s and t are anagrams of each other, otherwise return false.
