@@ -1,0 +1,6 @@
+To solve this problem of finding the first bad version, a binary search algorithm will be used to efficiently search for it.
+A left pointer called left will be initialized with value 1 for for the first version, right pointer called right with value n for the last version.
+The goal is to find the first bad version so while left < right, we will pass in the API into the if statement. If the bad version isn't
+in the middle, then binary search will be done on the right side of mid. This is because if we landed on a bad version, then any versions
+after it will also be bad. If the bad version is in the middle, then binary search will be done on the left side of mid. This process will keep 
+going until left = right, then we have found our first bad version and return it.
