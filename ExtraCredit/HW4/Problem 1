@@ -1,0 +1,11 @@
+In this problem, we are trying to find the best, average, and worst case of insertion sort.
+
+Best case: The best case for insertion sort is when the array is already sorted. For every element at array[i], it will be compared with element array[j], with j = i - 1.
+Since the array is already sorted, there would not be any shifts to the right using the while loop and it stays in place until we go through the whole array. So it has time complexity
+of O(n).
+
+Average case: The average case for insertion sort is when the array is in random order. For each new element, it has to be compared with half of the previously sorted elements,
+since half of them will be smaller, so the time complexity is O(n^2).
+
+Worst case: The worst case for insertion sort is when the array is in reverse order. When this happens, every new element will be compared to the previously sorted elements and have
+to take time to move to the beginning of the arrray. So the element at index 'i' will need 'i - 1' comparisons and 'i - 1' shifts, the time complexity will be O(n^2).
