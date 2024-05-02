@@ -1,0 +1,9 @@
+Best Case: O(n^3)
+
+Average Case: O(n^3)
+
+Worst Case: O(n^3)
+
+The best, average, and worst case for the matrix multiplication pseudocode will all be the same, which is a cubic time complexity. This is due to the matrix being a fixed size 
+and the operations needed to calculate each element of the result matrix are constant and are only based on the matrix dimensions.
+
