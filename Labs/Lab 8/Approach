@@ -1,0 +1,9 @@
+The goal of this problem is to find the minimum number of coins that make up the target amount. An efficient way to solve this
+problem is to use dynamic programming. We will use a dp array that will build up the solutions for all the amounts from 1 up to
+the target amount using results that we previously calculated. First we will initialize a dp array with size 'amount + 1' because
+we want to include the amount due to 0-based indexing. Next, we want to fill up the array that was previously all zeros to 
+amount + 1 for invalid amounts to start off with. We will set dp[0] = 0 for what we already know in our dp array, the min. number
+of coins to make amount 0 is 0. A for loop is used to go through all the amounts we're currently at until we reach the target amount
+and another for loop to find the min. number of coins for the current amount we're at. If the coin we're at is <= to the current
+amount, we will update the min. number of coins dp[i] for that ith amount. Once the dp array is built up, we should have our answer
+at the end of the array and return it. However, if we haven't found anything, then dp[amount] > amount, we will return -1.
