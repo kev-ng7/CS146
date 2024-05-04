@@ -1,0 +1,13 @@
+1. 10000000000n2 vs n^3
+n^3 is asymptotically greater, it has the higher degree of 3 compared to the quadratic function.
+
+2. n^2log(n) vs n(log(n))^10
+n^2log(n) is asymptotically greater, it has the higher degree of 2 compared to 1 of n(log(n))^10.
+
+3. n^logn vs 2^sqrn
+2^sqrn is asymptotically greater, it has a higher degree of square root n compared to logn of n^logn
+
+4. 2^n vs 2^2n
+2^2n is asymptotically greater, it has a higher degree of 2n compared to n of 2^n.
+
+
