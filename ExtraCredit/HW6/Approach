@@ -1,0 +1,10 @@
+To solve this problem, we have to return all the triplets numbers in an array that sums up to 0. A list containing a list of
+integers called result will be where the answer will be stored. The resulting triplet numbers can not contain duplicates so we
+first sort the array to make things easier. With sorting, if we find a duplicate number that we visited previously, then we will simply just 
+skip over and move to the next index and compare. The for loop that will go up to num.length - 2 and the if statement will take
+of the first number, num[i]. A left and right pointer approach will be used to help find the other numbers that add up with 
+num[i] to 0. The second number j, is the left pointer, and the third number k, is the right pointer. A while loop will be used to
+finish this process until j < k or until sum is found. If the sum of i, j, and k is greater than 0, then we will decrease the right
+pointer. If the sum is less than 0, we will increase the left pointer. Otherwise, we have found a triplet that add up to zero and
+will add it to the result list. Two more while loops will be used to check for duplicates for the second and third number and then
+move both pointers inward to check for more combinations. At the end, we will return the result list of all the triplets found.
