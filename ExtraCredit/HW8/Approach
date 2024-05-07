@@ -1,0 +1,11 @@
+To solve this problem, we don't have to build the palindrome but just return the length of the longest palidrome given the string.
+In order for the given string to be a palindrome, the frequency of each character in the string has to be an even number in order
+for it to be included in the palindrome, we can include one odd number (1) character in the middle as well. In order to do this, 
+we can create a hashmap called 'chars' to count the frequency of each character in the given string. A for loop will be used to
+convert the string s into a character array and interate through it. An if statement is used to count the frequency of each character
+in the string. A variable called result will be initialized to store our final answer and a variable called odd that will count the
+number of characters that have an odd frequency. Next, a for loop is used to interate through each of the characters frequency values
+in the hashmap. If the frequency count is even, we add it to the result. If the frequency is odd and greater than 1, we can subtract
+one from it to make it even, the one character left out will be used to increase the odd count. If a character appears only once, then
+it will just increase the odd count. Finally, if the number of odd frequencies is greater than 0, then we can place one of them in 
+the middle of the palindrome and return the result.
