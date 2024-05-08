@@ -1,0 +1,7 @@
+Yes, we can use heaps as priority queues. For a min heap, every parent node will less than its children, for a max heap, every parent node will
+be greater than its children. For a standard priority queue, it will take the smaller values as the highest priority first, which is a min heap. To implement a max
+heap, we have to add "Collections.reverseOrder());" when initializing the priority queue data structure. This will allow the bigger values to have
+the highest priority first. The offer method will insert elements into the priority queue while maintaining the heap property whether
+it's a max heap or min heap, and has O(logn) time complexity. The poll method will remove elements from the priority queue while
+maintaining the heap property and also has O(logn) time complexity. The peek method will access the root of the heap in the priority
+queue and has constant time O(1) complexity.
