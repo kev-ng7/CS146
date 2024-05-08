@@ -1,0 +1,6 @@
+Yes, given a max heap, we can use the max heap as a min heap without writing a whole min heap implementation. Same goes for a min
+heap, we can use it as a max heap. To do this for a max heap, we will first negate all of the values before inserting into the priority queue
+as a max heap. After that, we will negate all of those values again when deleting from the priority queue and then print it. The largest
+negative value will correspond to the smallest positive value at the end, this will turn it into a min heap. The same process goes for
+using a min heap as a max heap, negate all of the values before putting it into the priority queue as a min heap, and then negate the
+values again when deleting from the min heap. The smallest negative value will correspond to the largest positive value.
