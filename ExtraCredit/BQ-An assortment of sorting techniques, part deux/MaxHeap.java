@@ -13,6 +13,8 @@ public class MaxHeap {
         heap.offer(8);
         heap.offer(37);
 
+        System.out.println(heap.peek());
+        
         while (!heap.isEmpty()) {
             System.out.print(heap.poll() + " ");
         }
