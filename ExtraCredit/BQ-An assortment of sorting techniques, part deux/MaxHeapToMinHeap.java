@@ -6,12 +6,12 @@ public class MaxHeapToMinHeap {
     public static void main(String[] args) {
         Queue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
 
-        maxHeap.offer(50);
-        maxHeap.offer(11);
-        maxHeap.offer(3);
-        maxHeap.offer(37);
-        maxHeap.offer(8);
-        maxHeap.offer(25);
+        maxHeap.offer(-50);
+        maxHeap.offer(-11);
+        maxHeap.offer(-3);
+        maxHeap.offer(-37);
+        maxHeap.offer(-8);
+        maxHeap.offer(-25);
 
         System.out.println("Max heap: " + maxHeap);
 
