@@ -1,0 +1,10 @@
+To solve this problem of trying to find the minimum number of servers required to run all jobs, a two pointer approach will be used
+with two separate arrays. First, we're going to split the start and end time intervals in the 'intervals' array into two separate arrays
+called 'start' and 'end'. Next, we're going to sort both of those arrays so we can correctly process the times in order. A variable
+called 'minNumOfServers' will be initalized and it is where we still store our final result. Another variable called 'count' will be
+used to update the minimum number of servers needed during the time intervals. Variables i and j will be used as the pointers for
+the start and end arrays, starting at their beginning index. Since the start time has to be less than the end time, it will finish first
+before the end time during the while loop. So the idea is that if the start time is less than the end time, that means a new job
+is starting, so we'll increase the count by one to open a server and then increment the start pointer for the next comparison. However, if
+the start time is equal to the end time, then a job has ended and we can decrement the count by one and increase the end pointer. During the
+loop, we'll use the Math.max() method in order to keep track of the peak servers used and then return it for the final answer.
